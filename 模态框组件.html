@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模态框组建</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<!--模态框声明 淡入淡出-->
+<div class="modal fade" id="mymodal" tbindex="-1">
+    <!--窗口声明-->
+    <div class="modal-dialog" >
+        <!--内容声明-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" >
+                    <span>&times;</span>
+                </button>
+                <h4 class="modal-title">会员登录</h4>
+            </div>
+            <div class="modal-body">
+<div id="modal-fluid">
+    <div class="row">
+        <div class="col-md-4">1</div>
+        <div class="col-md-4">2</div>
+        <div class="col-md-4">3</div>
+    </div>
+</div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default">注册</button>
+                <button class="btn btn-primary">登陆</button>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mymodal" data-backdrop="static">点击弹窗</button>
+ <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$('#btn').on('click',function(){
+$('#mymodal').modal('show');
+});
+<!--自动跳出来-->
+    $('#mymodal').modal({
+    show:true,
+    });
+</script>
+</body>
+</html>

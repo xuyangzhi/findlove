@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>标签页插件</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:100px;">
+<ul class="nav nav-pills"><!--胶囊式-->
+    <li  class="active"><a href="#shouye"  data-toggle="tab">首页</a> </li>
+    <li><a href="#zixun" data-toggle="tab">资讯</a> </li>
+    <li><a href="#xinxi" data-toggle="tab">信息</a> </li>
+    <li><a href="#tupian" data-toggle="tab">图片</a> </li>
+</ul>
+<ul class="nav nav-tabs" id="nav">
+    <li  class="active"><a href="#shouye" data-toggle="tab">首页</a> </li>
+    <li><a href="#zixun" data-toggle="tab">资讯</a> </li>
+    <li><a href="#xinxi" data-toggle="tab">信息</a> </li>
+    <li><a href="#tupian" data-toggle="tab">图片</a> </li>
+</ul>
+<div class="tab-content" style="padding:20px;">
+    <div class="tab-pane active" id="shouye"><!--锚点定位-->
+        首页，《诗经》就整体而言，是周王朝由盛而衰五百年间中国社会生活面貌的形象反映，
+        其中有先祖创业的颂歌，祭祀神鬼的乐章；也有贵族之间的宴饮交往，劳逸不均
+        的怨愤；更有反映劳动、打猎、以及大量恋爱、婚姻、社会习俗方面的动人篇章。
+《诗经》现存305篇（此外有目无诗的6篇，共311篇），分《风》、《雅》、《颂》三部分。</div>
+    <div class="tab-pane fade" id="zixun"><!--锚点定位-->
+        资讯，《诗经》就整体而言，是周王朝由盛而衰五百年间中国社会生活面貌的形象反映，
+        其中有先祖创业的颂歌，祭祀神鬼的乐章；也有贵族之间的宴饮交往，劳逸不均
+        的怨愤；更有反映劳动、打猎、以及大量恋爱、婚姻、社会习俗方面的动人篇章。
+《诗经》现存305篇（此外有目无诗的6篇，共311篇），分《风》、《雅》、《颂》三部分。
+    </div>
+    <div class="tab-pane" id="xinxi"><!--锚点定位-->
+        信息，《诗经》就整体而言，是周王朝由盛而衰五百年间中国社会生活面貌的形象反映，
+        其中有先祖创业的颂歌，祭祀神鬼的乐章；也有贵族之间的宴饮交往，劳逸不均
+        的怨愤；更有反映劳动、打猎、以及大量恋爱、婚姻、社会习俗方面的动人篇章。
+《诗经》现存305篇（此外有目无诗的6篇，共311篇），分《风》、《雅》、《颂》三部分。
+    </div>
+    <div class="tab-pane" id="tupian">
+        图片，《诗经》就整体而言，是周王朝由盛而衰五百年间中国社会生活面貌的形象反映，
+        其中有先祖创业的颂歌，祭祀神鬼的乐章；也有贵族之间的宴饮交往，劳逸不均
+        的怨愤；更有反映劳动、打猎、以及大量恋爱、婚姻、社会习俗方面的动人篇章。
+《诗经》现存305篇（此外有目无诗的6篇，共311篇），分《风》、《雅》、《颂》三部分。
+    </div>
+</div>
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+<script style="text/javascript">
+    $('#nav a').on('click',function(e){
+    //阻止默认行为
+    e.preventDefault();
+    $(this).tab('show');
+    })
+</script>
+</body>
+</html>

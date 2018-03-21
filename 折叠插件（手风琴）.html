@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>折叠插件</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:100px">
+<button class="btn btn-primary" data-toggle="collapse" data-target="#content">折叠效果</button>
+<div class="collapse" id="content">
+    <div class="well">
+        徐扬志使用bootstrap制作的折叠效果展示！
+    </div>
+</div>
+
+<!--手风琴效果-->
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseone" data-toggle="collapse" data-parent="#accordion"><img src = images/leftdiv2.jpg></a>
+            </h4>
+        </div>
+        <div id="collapseone" class="panel-collapse collapse">
+            <div class="panel-body" >
+                第一部分内容
+            </div>
+        </div>
+    </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapsetwo" data-toggle="collapse" data-parent="#accordion">第二部分链接</a>
+            </h4>
+        </div>
+        <div  id="collapsetwo" class="panel-collapse collapse">
+            <div class="panel-body" >
+                第二部分内容
+            </div>
+        </div>
+    </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapsethree" data-toggle="collapse" data-parent="#accordion" >第三部分链接</a>
+            </h4>
+        </div>
+        <div  id="collapsethree" class="panel-collapse collapse">
+            <div class="panel-body" >
+                第三部分内容
+            </div>
+        </div>
+    </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="titlefour">
+                <a href="#collapsefour" data-toggle="collapse"  data-parent="#accordion" >第四部分链接</a>
+            </h4>
+        </div>
+        <div id="collapsefour"  class="panel-collapse collapse">
+            <div class="panel-body">
+               <img src=images/leftdiv3.jpg style="position:auto;">
+            </div>
+        </div>
+    </div>
+</div>
+ <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

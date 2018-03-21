@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>输入框与导航组件</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:200px">
+<button class="btn btn-primary" data-toggle="button" data-loading-text="loading" onautocomplete="off">上传</button>
+
+<br>
+<button class="btn btn-primary"  onautocomplete="off">上传</button>
+
+ <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('button').on('click', function(){
+    var btn=$(this).button('loading');
+    setTimeout(function(){
+    btn.button('reset');
+    },1000);
+    });//一秒钟之后重置
+    $('button').no('click',function(){
+    $(this).button('toggle');});
+</script>
+</body>
+</html>
