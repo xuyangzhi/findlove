@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="湖北工业大学知识分享平台，用来分享最优质的知识,原创的文章。为湖北工业大学学子提供优质的在线知识服务。"/><meta name="keywords" content="湖北工业大学知识分享平台，知识分享平台，湖北工业大学驿站，湖北工业大学，湖北工业大学艺术作品展示。"/><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon"  type="image/x-icon" href="images/logo.png" />
+    <title>slide</title>
+    <style>
+        * {box-sizing:border-box}
+        .mySlides {display:none}
+        /* 幻灯片容器 */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: 10% auto auto auto;
+            height: auto;
+        }
+        /* 下一张 & 上一张 按钮 */
+        .preve, .nexte {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: dodgerblue;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            background-color: whitesmoke;
+        }
+        /* 定位 "下一张" 按钮靠右 */
+        .nexte {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .preve:hover, .nexte:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* 标题文本 */
+        .texte {
+            color: #f22454;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* 数字文本 (1/3 等) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* 标记符号 */
+        .dot {
+            cursor:pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active .dot:hover {
+            background-color: #717171;
+        }
+        /* 淡出动画 */
+        .fadee {
+            -webkit-animation-name: fadee;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fadee;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fadee {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        @keyframes fadee {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top" style="background-color: lightblue"><div class="navbar-header">    　<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#demo"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png" style="width: 50px;height: 50px;margin-top: -15px;" alt="生活驿站-湖北工业大学知识分享平台" class="img-circle" /></a></div><div class="collapse navbar-collapse navbar-responsive-collapse " id="demo"><ul class="nav navbar-nav" style="font-weight: bold;"><li><li><a href="yuanchuangmeiwen.html">原创美文</a></li><li><a href="slide.html">电子相册</a></li><li><a href="shipin.html">摄影作品</a></li><li><a href="studentlogin.php">查询系统</a></li><li><a href="aboutsite.html">关于本站</a></li></ul></div></div>
+<div class="slideshow-container">
+    <div class="mySlides fadee" style="display: block">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/IMG_20170318_154627.jpg" style="width:100%; ">
+        <div class="texte">武汉东湖骑行</div>
+    </div>
+    <div class="mySlides fadee">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/IMG_20170401_110057.jpg" style="width:100%; ">
+        <div class="texte">陕西鼓楼留念</div>
+    </div>
+    <div class="mySlides fadee">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/IMG_20170401_144446.jpg" style="width:100%; ">
+        <div class="texte">西安大雁塔喷泉</div>
+    </div>
+    <div class="mySlides fadee">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/1520843557582.jpeg" style="width:100%; ">
+        <div class="texte">湖工校园留念</div>
+    </div>
+    <div class="mySlides fadee">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/1520843561052.jpeg" style="width:100%; ">
+        <div class="texte">西安大雁塔喷泉</div>
+    </div>
+    <a class="preve" onclick="plusSlides(-1)">❮</a>
+    <a class="nexte" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</body>
+<script type="text/javascript" language="JavaScript" src="js/slide.js"></script>
+</html>

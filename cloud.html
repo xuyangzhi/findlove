@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>面板</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="panel panel-default">
+<div class="panel-heading">
+    <h2 class="panel-title"><h2 class="h2 text-center">风险评估系统</h2></h2>
+</div>
+<div class="panel-body" style=" background-color: #1b6d85">
+    <form  class="col-sm-offset-4 col-sm-8 col-sm-offset-4 form form-horizontal" style="float: left;margin-left: 20%;margin-top: 2%;background-color: #1b6d85" method="post" action="cloudinsert.php">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="projectname">Name of Project</label>
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <input type="text" class="form-control" id="projectname" name="projectname">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Time</label>
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <input type="datetime-local" class="form-control" name="time" id="time">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Availability</label>
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <select class="form-control" id="Availability" name="Availability">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Reliability</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="Reliability" name="Reliability">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Performence</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="Performence" name="Performence">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Scalability</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="Scalability" name="Scalability">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Security</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="Security" name="Security">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="Availability">Datamanagement</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="Datamanagement" name="Datamanagement">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class=" form-group col-sm-8" style="margin-top: 5%;margin-left: 10%">
+        <button class="btn-sm btn-success col-sm-2" type="submit" id="tijiao" value="tijiao" style="margin-left: 30%">提交</button>
+        <button class="btn-sm btn-danger col-sm-2" type="reset" id="reset" value="chongzhi" style="margin-left: 5%">重置</button>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+<script type="text/javascript" language="JavaScript">
+    function gettime() {
+        var time=new Date();
+        return time.toLocaleDateString();
+    }
+    var time=document.getElementById('time');
+    time.value=gettime();
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script language="JavaScript" type="text/javascript"></script>
+</html>
